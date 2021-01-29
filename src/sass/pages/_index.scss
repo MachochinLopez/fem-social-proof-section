@@ -1,0 +1,21 @@
+.index-body {
+  background-color: $neutral-white;
+  background-image: url("../images/bg-pattern-top-mobile.svg"),
+    url("../images/bg-pattern-bottom-mobile.svg");
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  // background-size: 100rem;
+}
+
+.social-proof-title {
+  padding-top: 7rem;
+  padding-bottom: 3.5rem;
+
+  h1 {
+    margin-bottom: 3rem;
+  }
+}
+
+.social-proof-user-reviews {
+  padding-top: 5rem;
+}

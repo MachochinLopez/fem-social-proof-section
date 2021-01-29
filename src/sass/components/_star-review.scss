@@ -1,0 +1,17 @@
+.star-review {
+  background-color: rgba($primary-magenta, 0.05);
+  border-radius: $border-radius-value;
+  padding: 1.5rem;
+
+  &:not(:last-child) {
+    margin-bottom: $margin-bottom-value;
+  }
+
+  &__stars {
+    padding-bottom: 1rem;
+
+    img {
+      padding: 0 0.1rem;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.review-card {
+  background-color: $primary-magenta;
+  border-radius: $border-radius-value;
+  padding: 3.25rem;
+
+  &:not(:last-child) {
+    margin-bottom: $margin-bottom-value;
+  }
+
+  &__user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2.5rem;
+  }
+
+  &__user-picture {
+    border-radius: 50%;
+    height: 4.5rem;
+  }
+
+  &__user-info-container {
+    margin-left: 2rem;
+  }
+
+  &__user-name {
+    margin-bottom: 0.2rem;
+  }
+}
