@@ -27,3 +27,20 @@
     margin-bottom: 0.2rem;
   }
 }
+
+@include respond(desktop) {
+  .review-card {
+    &:not(:last-child) {
+      margin-right: 3rem;
+      margin-bottom: 0;
+    }
+
+    &:nth-child(2) {
+      margin-top: 2rem;
+    }
+
+    &:nth-child(3) {
+      margin-top: 4rem;
+    }
+  }
+}

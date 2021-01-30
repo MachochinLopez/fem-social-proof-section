@@ -4,18 +4,67 @@
     url("../images/bg-pattern-bottom-mobile.svg");
   background-position: 0 0, 0 100%;
   background-repeat: no-repeat;
-  // background-size: 100rem;
+
+  @include respond(desktop) {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+
+    background-image: url("../images/bg-pattern-top-desktop.svg"),
+      url("../images/bg-pattern-bottom-desktop.svg");
+    background-position: 0 0, 100% 100%;
+  }
+}
+
+.social-proof-section {
+  padding-top: 6.5rem;
+  display: grid;
+  margin: 0 auto;
+  max-width: 600px;
+
+  @include respond(desktop) {
+    max-width: 1125px;
+
+    // GRID PROPS
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+  }
 }
 
 .social-proof-title {
-  padding-top: 7rem;
   padding-bottom: 3.5rem;
 
   h1 {
     margin-bottom: 3rem;
   }
+
+  @include respond(desktop) {
+    width: 80%;
+
+    h1 {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.social-proof-star-ratings {
+  @include respond(desktop) {
+    margin-top: 2rem;
+  }
 }
 
 .social-proof-user-reviews {
   padding-top: 5rem;
+
+  @include respond(desktop) {
+    padding-top: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    // GRID PROPS
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }

@@ -42,18 +42,32 @@ body {
   text-align: center;
 
   h1 {
-    font-size: 3.2rem;
-    line-height: 3rem;
     color: $primary-magenta;
+    font-size: 3.2rem;
     font-weight: 700;
     letter-spacing: -1px;
+    line-height: 3rem;
   }
 
   p {
-    font-size: 1.4rem;
-    line-height: 2rem;
     color: $neutral-dark-magenta;
+    font-size: 1.4rem;
     font-weight: 500;
+    line-height: 2rem;
+  }
+
+  @include respond(desktop) {
+    text-align: left;
+
+    h1 {
+      font-size: 4.5rem;
+      line-height: 4.5rem;
+      letter-spacing: -2px;
+    }
+
+    p {
+      line-height: 2.5rem;
+    }
   }
 }
 
@@ -63,14 +77,14 @@ body {
 
 .star-review__title {
   color: $primary-magenta;
-  font-weight: 700;
   font-size: 1.3rem;
+  font-weight: 700;
 }
 
 .review-card {
   color: $neutral-white;
-  font-weight: 400;
   font-size: 1.25rem;
+  font-weight: 400;
   line-height: 2rem;
 
   &__user-name {
@@ -94,8 +108,12 @@ body {
   }
 }
 
-// Aquí van los estilos de tipografía para los navegadores que soportan
-// las fuentes variables.
+/**************************************
+ * Aquí van los estilos de tipografía *
+ * para los navegadores que soportan  *
+ *      las fuentes variables         *
+ *************************************/
+
 @supports (font-variation-settings: normal) {
   body {
     font-family: "SpartanVariable";
