@@ -240,7 +240,7 @@ body {
   .index-body {
     display: grid;
     justify-content: center;
-    align-content: center;
+    align-content: flex-start;
     height: 100vh;
     background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
     background-position: 0 0, 100% 100%;
